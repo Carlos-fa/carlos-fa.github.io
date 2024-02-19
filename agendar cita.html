@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita</title>
+    <link rel="stylesheet" href="cita.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+    <!--primera seccion-->
+    <div id="primera-seccion">
+        <div id="barra-navegacion">
+            <p id="logo">Colegio<span style="color: #03235f;"> Horizonte</span></p>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="niveles academicos.html">Niveles Academicos</a>
+                <a href="quienes somos.html">¿Quienes Somos?</a>
+                <!--<a href="#">Eventos</a>-->
+                <a href="agendar cita.html">Agendar Cita</a>
+                <a href="informes.html">Informes</a>
+            </nav>
+        </div>
+        <!--termina primera seccion-->
+        <!--Empieza Formulario-->
+        <div class="form-container">
+            <form id="appointmentForm" action="/submit_appointment" method="post">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="academic_level">Elige nivel académico:</label>
+                <select id="academic_level" name="academic_level" required>
+                    <option value="preescolar">Preescolar</option>
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="bachillerato">Bachillerato</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Validar datos" />
+                <a href="CitaRecibida.html" id="redirectButton" class="button" style="display: none;">Agendar cita</a>
+            </div>
+        </form>
+    </div>
+    <script src="cita.js"></script>
+    <!--termina formulario-->
+         <!--footer-->
+         <footer>
+            <p>CDMX Email: colegiohorizonte10@gmail.com.mx</p>
+            <p>Coppyrigt 2024 <span style="color: #0652DD;">Colegio Horizonte</span></p>
+            <p>Autor <span style="color: #0652DD;">CarlosFA</span></p>
+        </footer>
+        <!--termina footer-->
+</body>
+</html>

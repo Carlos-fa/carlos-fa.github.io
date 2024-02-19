@@ -1,0 +1,127 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'noto sans', sans-serif;
+    color: #000000;
+}
+/*comienzan las clases reutilizables*/
+.btn-azul{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'montserrat',sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #0652DD;
+    padding: 1rem 2rem;
+    display: inline-block;
+    align-self: center;
+}
+.frase{
+    text-align: center;
+    color: black;
+}
+/*termina los reutilizables*/
+/* comienza 1ra seccion*/
+#primera-seccion{
+    background: linear-gradient(rgb(0, 0, 0),rgba(38,2,2,0.446)),url()no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+#barra-navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#logo{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: wider;
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+nav>a:hover{
+    color: #0652DD;
+}
+#primera-seccion-contenido{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#primera-seccion-contenido>p{
+    text-transform: capitalize;
+    font-family: 'montserrat',sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+#primera-seccion-contenido>hr{
+    width: 4.5rem;
+    border-color: #0652DD;
+}
+#primera-seccion-contenido>h1{
+    font-family: 'montserrat',sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+/*termina la 1ra seccion*/
+/*empieza 4ta seccion*/
+#cuarta-seccion{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.905)),url(quienes.jpg)no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#contenedor{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.mitad{
+    width: 50%;
+}
+#cuarta-seccion-der>h3{
+    text-transform: uppercase;
+    font-family: 'montserrat',sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+#cuarta-seccion-der>hr{
+    width: 4.5rem;
+    border-color: #0652DD;
+    margin-left: 0;
+    margin-bottom: 3rem;
+}
+#cuarta-seccion-der>p{
+    margin-bottom: 4rem;
+}
+/*termina 4ta seccion*/
+/*empieza footer*/
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/*termina footer*/

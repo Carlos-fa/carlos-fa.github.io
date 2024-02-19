@@ -1,0 +1,224 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'noto sans', sans-serif;
+    color: #000000;
+}
+/*comienzan las clases reutilizables*/
+.btn-azul{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'montserrat',sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #0652DD;
+    padding: 1rem 2rem;
+    display: inline-block;
+    align-self: center;
+}
+.frase{
+    text-align: center;
+    color: black;
+}
+/*termina los reutilizables*/
+/* comienza 1ra seccion*/
+#primera-seccion{
+    background: linear-gradient(rgba(8, 94, 255, 0.35),rgba(38,2,2,0.446)),url(escuela\ 2.jpg)no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+#barra-navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#logo{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: wider;
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+nav>a:hover{
+    color: #0652DD;
+}
+#primera-seccion-contenido{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#primera-seccion-contenido>p{
+    text-transform: capitalize;
+    font-family: 'montserrat',sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+#primera-seccion-contenido>hr{
+    width: 4.5rem;
+    border-color: #0652DD;
+}
+#primera-seccion-contenido>h1{
+    font-family: 'montserrat',sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+/*termina la 1ra seccion*/
+/*comienda la 2da seccion*/
+#segunda-seccion{
+    background-color: #f4f5f9;
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+/*termina 2da seccion*/
+/*empieza 3ra seccion*/
+#tercera-seccion{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#titulo{
+    margin-bottom: 2rem;
+}
+#titulo> h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'montserrat',sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+#titulos>hr{
+    width: 4.5rem;
+    border-color: #0652DD;
+}
+#container-tercera-seccion{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.img-tercera{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.img-tercera>h6{
+    text-align: center;
+    font-family: 'montserrat',sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.img-tercera>p{
+    margin-bottom: 2rem;
+}
+.img-tercera> img{
+    max-width: 100;
+}
+/*termina 3er seccion*/
+/*empieza 4ta seccion*/
+#cuarta-seccion{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.905)),url(ESTUDIANTES.jpg)no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#contenedor{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.mitad{
+    width: 50%;
+}
+#cuarta-seccion-der>h3{
+    text-transform: uppercase;
+    font-family: 'montserrat',sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+#cuarta-seccion-der>hr{
+    width: 4.5rem;
+    border-color: #0652DD;
+    margin-left: 0;
+    margin-bottom: 3rem;
+}
+#cuarta-seccion-der>p{
+    margin-bottom: 4rem;
+}
+/*termina 4ta seccion*/
+/*comienza 5ta seccion*/
+#quinta-seccion{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#quinta-seccion-izq{
+    flex: 1;
+}
+#quinta-seccion-izq>h3{
+    text-transform: uppercase;
+    font-family: 'montserrat',sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+#quinta-seccion-izq>p{
+    margin-bottom: 4rem;
+}
+#quinta-seccion-der{
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px 10px;
+    justify-items: center;
+    align-items: center;
+}
+#quinta-seccion-der>img{
+    max-width: 100%;
+}
+#quinta-seccion-der>hr{
+    width: 4.5rem;
+    border-color: #0652DD;
+    margin-left: 0;
+    margin-bottom: 3rem;
+}
+/*termina 5ta seccion*/
+/*empieza footer*/
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/*termina footer*/
